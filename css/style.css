@@ -1,0 +1,167 @@
+* {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 550;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #edf2f8;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGEM NO FUNDO E COR DE BACK GROUND */
+.container-daniel {
+    background-repeat: no-repeat;
+    background-position: 90% 10px;
+    background-image: url(/images/bg-pattern-quotation.png);
+    border-radius: 10px;
+    background-color: #733fc8;
+    position: relative;
+    display: flex;
+    border: 1px solid;
+    flex-direction: column;
+}
+
+/* IMAGEM NO FUNDO E COR DE BACK GROUND */
+
+.container-jonathan,
+.container-patrick,
+.container-daniel,
+.container-jeanet,
+.container-kira {
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.container-jeanet,
+.container-kira {
+
+    box-shadow: 12px 16px 39px -13px black
+}
+
+.container-jeanet .p1,
+.container-kira .p1,
+.container-jeanet .span1,
+.container-kira .span1 {
+    color: #54595f;
+}
+
+.container-jeanet .p2,
+.container-kira .p2,
+.container-jeanet .span2,
+.container-kira .span2 {
+    color: #a4a5a9;
+}
+
+
+
+.container-jonathan {
+    background-color: #49556b;
+}
+
+.container-patrick {
+    background-color: #18202d;
+}
+
+.container-img1 {
+    margin-right: 15px;
+    display: flex;
+    border-radius: 50px;
+    width: 100%;
+}
+
+.imagem-principal {
+    border: 1px solid white;
+    height: 35px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 35px;
+    margin-right: 10px;
+}
+
+.container-p {
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    margin-top: 20px;
+}
+
+.p1 {
+    color: #fff0ff;
+}
+
+.p2 {
+    color: #ffffff6e;
+}
+
+.container-spans {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.span1 {
+    color: #fff0ff;
+    font-size: 21px;
+    margin-left: 35px;
+    margin-right: 15px;
+    margin-top: 30px;
+}
+
+.span2 {
+    font-size: 13px;
+    margin-left: 35px;
+    margin-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #ffffff6e;
+}
+
+
+@media (min-width: 778px) {
+
+    .container-principal {
+        gap: 25px;
+        display: grid;
+        /* DANDO FORMA A AREA GRID*/
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+
+            "um um dois tres "
+            "quatro cinco cinco tres ";
+        /* DANDO FORMA A AREA GRID*/
+    }
+
+    /* NOMEANDO  AREA GRID: UM DOIS TRES QUATRO CINCO*/
+    .container-daniel {
+        grid-area: um;
+        width: 100%;
+    }
+
+    .container-jonathan {
+        grid-area: dois;
+    }
+
+    .container-jeanet {
+        grid-area: quatro;
+    }
+
+    .container-patrick {
+        grid-area: cinco;
+    }
+
+    .container-kira {
+        grid-area: tres;
+    }
+}
+
+/* NOMEANDO  AREA GRID: UM DOIS TRES QUATRO CINCO*/
